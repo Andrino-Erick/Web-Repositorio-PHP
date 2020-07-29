@@ -1,0 +1,511 @@
+/*Importamos Fuentes a utilizar*/
+@font-face{
+    font-family: 'Rowdies';
+    src: url('../css/fonts/Rowdies-Regular.ttf');
+    font-size: normal;
+    font-weight: normal;
+}
+
+@font-face{
+    font-family: 'RedRose';
+    src: url('../css/fonts/RedRose-Regular.ttf');
+    font-size: normal;
+    font-weight: normal;
+}
+
+@font-face{
+    font-family: 'Lobster';
+    src: url('../css/fonts/Lobster-Regular.ttf');
+    font-size: normal;
+    font-weight: normal;
+}
+
+@font-face{
+    font-family: 'Roboto';
+    src: url('../css/fonts/RobotoSlab-VariableFont_wght.ttf');
+    font-size: normal;
+    font-weight: normal;
+}
+
+/*Resetamos los margenes y padding que trae por defecto el navegador*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos globales*/
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.clearfix{
+    float: none;
+    clear: both;
+}
+
+
+
+/*Estilos página Home */
+.home-body{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.header{
+    display: grid;
+    width: 100%;
+    height: 80px;
+    background-color: #7700e7;
+    grid-template-columns: 1fr 3fr;
+}
+
+.header-logo .logo a{
+    font-family: 'Lobster';
+    font-size: 30px;
+    line-height: 80px;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    margin-left: 10px;
+    transition: all 200ms;
+}
+
+.header-logo .logo a:hover{
+
+    font-size: 40px;
+    color: black;
+    text-shadow: 2px 2px 2px white;
+    
+}
+
+
+
+
+/*Estilos a la barra de Menú de navegación*/
+.section-nav .menu ul{
+    list-style: none;    
+}
+
+.section-nav .menu ul li{
+    float: left;
+}
+
+.section-nav .menu ul li a{
+    font-family: 'Rowdies';
+    font-size: 20px;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    display: block;
+    padding-left: 70px;
+    padding-right: 40px;
+    line-height: 80px;
+    transition: all 200ms;
+}
+
+.section-nav .menu ul li a:hover{
+    font-size: 30px;
+    text-shadow: 2px 2px 2px black;
+}
+
+/*Estilos Main container*/
+#main-container{
+    width: 100%;
+    height: 100%;
+   
+    background-image: url('https://images2.alphacoders.com/103/1039991.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+}
+
+.products-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    
+}
+
+.product-content{
+    margin: 0 auto;
+    /*Aca le indicamos que use el 50% del ancho de la pantalla*/
+    margin-top: 50%;
+    margin-left: 15px;
+    margin-right: 20px;
+    
+}
+
+.product-content img{
+    width: 100px;
+    height: 100px;
+    
+}
+
+.product-content a{
+    font-family: 'Rowdies';
+    font-size: 25px;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+   transition: all 200ms;
+    
+}
+
+.product-content a:hover{
+    font-size: 35px;
+    
+}
+
+/*Estilos de productos.html*/
+#container-products{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    width: 95%;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 15px;
+    border: 1px solid black;
+    box-shadow: 15px 15px 20px #cccccc;
+}
+
+
+
+.aside{
+    display: grid;
+    grid-template-rows: 1fr 12fr;
+   
+}
+
+.aside-search{
+    margin-top: 15px;
+    margin-left: 15px;
+}
+
+.aside-search input[type="text"]{
+    width: 50%;
+    height: 35px;
+    padding-left: 15px;
+    
+}
+
+.aside-search button{
+    width: 60px;
+    height: 35px;
+    border-radius: 5px;
+    
+}
+
+.aside-search button:hover{
+    background-color: #440083;
+    color: white;
+    border-radius: 10px;
+}
+
+.aside-content-description{
+    display: grid;
+}
+
+.content-description h3{
+
+    font-family: 'Rowdies';
+    font-size: 25px;
+    margin-left: 20px;
+    border-bottom: 1px solid #cccccc;
+    margin-top: -30px;
+}
+
+.content-description ul li{
+    list-style: none;
+    margin-left: 45px;
+    margin-top: 20px;
+}
+
+.content-description ul li a{
+    font-size: 20px;
+}
+
+.content-description ul li a:hover{
+    text-decoration: underline;
+    color: #7700e7;
+    text-shadow: 1px 1px 1px white;
+    font-size: 25px;
+}
+
+
+/*Estilos Productos a mostrar*/
+.content-articles-producto{
+    display: grid;
+   
+}
+
+.section-container-productos{
+    height: auto;
+}
+
+
+
+.content-articles-productos .product-content{
+    border: 1px solid #cccccc;
+    
+}
+
+.section-container-productos .container .products-content{
+    margin-top: -250px;
+}
+
+.content-articles-productos .article-producto{
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    grid-template-rows: 2fr 2fr 2fr;
+    margin-left: 95px;
+    margin-top: -130px;
+    margin-bottom: 1px;
+   
+}
+
+
+.content-articles-productos .product-content img{
+    width: 100%;
+    height: 200px;
+}
+
+.content-articles-productos .article-producto h2{
+    font-family: 'Roboto';
+    font-size: 20px;
+    margin-left: 15px;
+    margin-right: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.content-articles-productos .article-producto p{
+    font-family: 'RedRose';
+    font-size: 15px;
+    margin-left: 20px;
+    margin-right: 15px;
+    text-align: justify;
+    margin-bottom: 5px;
+    color: #afafaf;
+}
+
+.content-articles-productos .article-producto h3{
+    font-family: 'RedRose';
+    font-size: 20px;
+    margin-left: 15px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+
+.article-producto .icon{
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 45px;     
+}
+
+.article-producto .icon button{
+    margin-bottom: 15px;
+    margin-left: 20px;
+}
+
+
+.article-producto .icon img{
+    width: 50px;
+    height: 40px;
+    
+}
+
+
+
+/*Estilos Footer*/
+.footer{
+    display: flex;
+    width: 95%;
+    height: 35px;
+    margin: 0 auto;
+    background-color: #2f005a;
+    
+    
+}
+
+.footer-umg{
+    
+    color: white;
+    font-size: 20px;
+    margin-left: 15px;
+}
+
+
+/* Estilos producto.html*/
+.product-products-container{
+    display: flex;
+    
+}
+.product-product-container{
+    width: 450px;
+    height: 350px;
+    display: flex;
+    justify-content: start;
+    margin-left: 90px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    
+}
+
+.product-imag img{
+    width: 450px;
+    height: 350px;
+}
+
+.product-description-container{
+    display: flex;
+    justify-content: center;
+    width: 780px;
+    height: 450px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 100px;
+}
+
+.product-description-container .product-description h2{
+    font-family: 'Rowdies';
+    font-weight: normal;
+    font-size: 25px;
+    text-shadow: 2px 2px 2px white;
+    margin-top: 25px;
+    margin-left: -105px;
+    margin-bottom: 25px;
+}
+
+.product-description-container .product-description p{
+    font-family: 'Roboto';
+    font-size: 18px;
+    color: #afafaf;
+    margin-left: -25px;
+    margin-bottom: 15px;
+}
+
+.product-description-container .product-description h3{
+    font-family: 'Roboto';
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+.product-description-container .product-description button{
+    width: 150px;
+    height: 50px;
+    margin-top: 25px;
+    background-color: #7700e7;
+}
+
+.product-description-container .product-description button a{
+    font-family: 'Roboto';
+    font-size: 15px;
+    color: white;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px black;
+}
+
+.product-description-container .product-description button:hover{
+    background-color: #7c03ec;
+    box-shadow: 1px 1px 1px 1px 1px  black inset;
+}
+
+
+/*Estilos Contacto.html*/
+.container-contact {
+  display: grid;
+   width: 890px;
+   height: auto;
+   margin-left: 200px;
+   margin-top: 20px;
+   margin-bottom: 20px;
+   grid-template-rows: 1fr 5fr;
+  
+  
+}
+
+.contact h1{
+    font-family: 'Roboto';
+    font-size: 30px;
+    text-shadow: 1px 1px 1px #afafaf;
+    margin-bottom: 15px;
+}
+
+.contact p{
+    font-family: 'Roboto';
+    font-size: 20px;
+    color: #afafaf;
+    margin-left: 25px;
+    
+}
+
+.contact-form{
+   margin-top: 35px;
+    margin-left: 25%;
+}
+
+
+
+.contact-form form label{
+    font-family: 'Roboto';
+    font-size: 20px;
+    margin-right: 20px;
+    color: #afafaf;
+    font-weight: bold;
+    margin-bottom: 25px;
+    margin-right: 15px;
+    
+}
+
+.contact-form .consult{
+    margin-top: -50px;
+}
+
+
+.contact-form form input[type="text"],
+.contact-form form select
+{
+    width: 350px;
+    height: 25px;
+    border-radius: 10px;
+    padding-left: 15px;
+    
+    box-shadow: 1px 1px 1px #cccccc inset;
+    margin-bottom: 25px;
+}
+
+
+
+.contact-form textarea{
+    width: 350px;
+    height: 42px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px #cccccc inset;
+    padding-left: 15px;
+    line-height: 42px;
+    
+}
+
+.contact-form button{
+    width: 90px;
+    height: 45px;
+    margin-top: 25px;
+    margin-left: 90px;
+    background-color: #7700e7;
+    color: white;
+    font-family: 'Roboto';
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 200ms;
+}
+
+.contact-form button:hover{
+    background-color: #440083;
+    box-shadow: 2px 2px 2px #cccccc inset;
+}
+
+.contact-form .create{
+    width: 120px;
+}
